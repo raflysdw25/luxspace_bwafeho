@@ -1,43 +1,218 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>Your Very Handsome Website</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<title>Luxspace - Saingan IKEA</title>
+		<meta name="description" content="Menjual furniture berkualitas" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+		<!-- Untuk thumbnail share page di facebook -->
+		<meta property="og:title" content="Luxspace - Saingan IKEA" />
+		<meta property="og:description" content="Menjual furniture berkualitas" />
+		<meta property="og:url" content="https://luxspace.com" />
+		<meta
+			property="og:image"
+			content="https://luxspace.com/images/content/preview-homepage.png"
+		/>
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="images/content/favicon.png" />
-    <!-- Place favicon.ico in the root directory -->
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" href="images/favicon.ico" />
+		<!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" href="images/content/favicon.png" />
+		<link rel="stylesheet" href="./css/app.minify.css" />
+		<link rel="icon" href="images/favicon.ico" />
 
-    <meta name="theme-color" content="#000" />
-  </head>
+		<meta name="theme-color" content="#000" />
+	</head>
 
-  <body>
-    <!-- Add your site or application content here -->
+	<body>
+		<!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+		<!-- START : Header -->
+		<header class="absolute w-full px-4 z-50">
+			<div class="container mx-auto py-10">
+				<div class="flex flex-stretch items-center">
+					<!-- START : LOGO BRAND -->
+					<div class="w-56 flex items-center">
+						<img
+							src="images/design/logo.svg"
+							alt="Luxspace - find your true happiness here"
+						/>
+					</div>
+					<!-- END : LOGO BRAND -->
+					<div class="w-full"></div>
+					<!-- START: Menu humberger wrapper -->
+					<div class="w-auto">
+						<ul
+							class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+						>
+							<li class="mx-3 py-6 md:py-0">
+								<a href="#" class="text-black hover:text-white hover:underline"
+									>Showcase</a
+								>
+							</li>
+							<li class="mx-3 py-6 md:py-0">
+								<a href="#" class="text-black hover:text-white hover:underline"
+									>Catalog</a
+								>
+							</li>
+							<li class="mx-3 py-6 md:py-0">
+								<a href="#" class="text-black hover:text-white hover:underline"
+									>Delivery</a
+								>
+							</li>
+							<li class="mx-3 py-6 md:py-0">
+								<a href="#" class="text-black hover:text-white hover:underline"
+									>Rewards</a
+								>
+							</li>
+						</ul>
+					</div>
+					<!-- END: Menu humberger wrapper -->
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+					<!-- START : MENU BUTTON -->
+					<div class="w-auto">
+						<ul class="flex items-center">
+							<li class="ml-6 md:hidden">
+								<button
+									id="menu-toggler"
+									class="relative flex z-50 items-center justify-center w-8 h-8 text-black hover:text-white focus:outline-none"
+								>
+									<svg
+										class="fill-current"
+										width="18"
+										height="17"
+										viewBox="0 0 18 17"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M15.9773 0.461304H1.04219C0.466585 0.461304 0 0.790267 0 1.19609C0 1.60192 0.466668 1.93088 1.04219 1.93088H15.9773C16.5529 1.93088 17.0195 1.60192 17.0195 1.19609C17.0195 0.790208 16.5529 0.461304 15.9773 0.461304Z"
+										/>
+										<path
+											d="M15.9773 7.68802H1.04219C0.466585 7.68802 0 8.01698 0 8.42281C0 8.82864 0.466668 9.1576 1.04219 9.1576H15.9773C16.5529 9.1576 17.0195 8.82864 17.0195 8.42281C17.0195 8.01692 16.5529 7.68802 15.9773 7.68802Z"
+										/>
+										<path
+											d="M15.9773 14.9147H1.04219C0.466585 14.9147 0 15.2437 0 15.6495C0 16.0553 0.466668 16.3843 1.04219 16.3843H15.9773C16.5529 16.3843 17.0195 16.0553 17.0195 15.6495C17.0195 15.2436 16.5529 14.9147 15.9773 14.9147Z"
+										/>
+									</svg>
+								</button>
+							</li>
+							<li class="ml-6">
+								<a
+									href="cart.html"
+									class="flex items-center justify-center w-8 h-8 text-black hover:text-white"
+								>
+									<svg
+										class="fill-current"
+										width="29"
+										height="25"
+										viewBox="0 0 29 25"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.8754 19.7673C9.61762 19.7673 8.59436 20.8079 8.59436 22.087C8.59436 23.3661 9.61762 24.4067 10.8754 24.4067C12.1331 24.4067 13.1564 23.3661 13.1564 22.087C13.1563 20.8079 12.1331 19.7673 10.8754 19.7673ZM10.8754 23.1114C10.3199 23.1114 9.86796 22.6518 9.86796 22.0869C9.86796 21.522 10.3199 21.0624 10.8754 21.0624C11.4308 21.0624 11.8828 21.5221 11.8828 22.0869C11.8828 22.6519 11.4308 23.1114 10.8754 23.1114Z"
+										/>
+										<path
+											d="M18.8764 19.7673C17.6186 19.7673 16.5953 20.8079 16.5953 22.087C16.5953 23.3661 17.6186 24.4067 18.8764 24.4067C20.1342 24.4067 21.1575 23.3661 21.1575 22.087C21.1574 20.8079 20.1341 19.7673 18.8764 19.7673ZM18.8764 23.1114C18.3209 23.1114 17.869 22.6518 17.869 22.0869C17.869 21.522 18.3209 21.0624 18.8764 21.0624C19.4319 21.0624 19.8838 21.5221 19.8838 22.0869C19.8838 22.6519 19.4319 23.1114 18.8764 23.1114Z"
+										/>
+										<path
+											d="M19.438 7.5542H10.3122C9.96051 7.5542 9.67542 7.84413 9.67542 8.2018C9.67542 8.55947 9.96056 8.8494 10.3122 8.8494H19.438C19.7897 8.8494 20.0748 8.55947 20.0748 8.2018C20.0748 7.84408 19.7897 7.5542 19.438 7.5542Z"
+										/>
+										<path
+											d="M18.9414 10.9172H10.8089C10.4572 10.9172 10.1721 11.2072 10.1721 11.5648C10.1721 11.9225 10.4572 12.2124 10.8089 12.2124H18.9413C19.293 12.2124 19.5781 11.9225 19.5781 11.5648C19.5781 11.2072 19.293 10.9172 18.9414 10.9172Z"
+										/>
+										<path
+											d="M25.6499 4.66886C25.407 4.36574 25.0472 4.19193 24.6626 4.19193H4.82655L4.42595 2.21429C4.34232 1.80176 4.06563 1.45537 3.68565 1.28758L0.890528 0.0537834C0.567841 -0.0887602 0.192825 0.0618197 0.0528584 0.389871C-0.0872597 0.718025 0.0608116 1.09945 0.383347 1.24178L3.17852 2.47563L6.2598 17.6862C6.38117 18.2852 6.90578 18.72 7.50723 18.72H22.7635C23.1152 18.72 23.4003 18.4301 23.4003 18.0724C23.4003 17.7147 23.1152 17.4248 22.7635 17.4248H7.50728L7.13247 15.5745H22.8814C23.4828 15.5745 24.0075 15.1398 24.1288 14.5407L25.9101 5.74831C25.9876 5.36545 25.8928 4.97192 25.6499 4.66886ZM22.8814 14.2794H6.87012L5.08895 5.48708L24.6626 5.48713L22.8814 14.2794Z"
+										/>
+										<circle
+											cx="25"
+											cy="4.67505"
+											r="4"
+											fill="#F9CADA"
+											class="cart-filled"
+										/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- END : MENU BUTTON -->
+				</div>
+			</div>
+		</header>
+		<!-- END : Header -->
+
+		<!-- START : Section Hero -->
+		<section class="flex items-center hero">
+			<!-- START : Section Hero | Left Side -->
+			<div
+				class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
+			>
+				<h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+					The Room <br class="" />
+					You've Dreaming
+				</h1>
+				<h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+					Kami menyediakan furniture berkelas yang
+					<br class="hidden lg:block" />
+					membuat ruangan terasa homey
+				</h2>
+				<div>
+					<a
+						href="#browser-the-room"
+						class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 px-8 py-3 mt-4 rounded-full inline-block flex-none transition duration-200"
+					>
+						Explore Now
+					</a>
+				</div>
+			</div>
+			<!-- END : Section Hero | Left Side -->
+			<!-- START : Section Hero | Right Side -->
+			<div class="w-full inset-0 md:relative md:w-1/2">
+				<div class="relative hero-image">
+					<div class="overlay insert-0 bg-black opacity-30 z-10"></div>
+					<div class="overlay right-0 bottom-0 md:inset-0">
+						<button
+							class="modal-trigger video hero-cta focus:outline-none z-30"
+							data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
+								<div class="w-full h-full absolute">
+									<iframe
+										width="100%"
+										height="100%"
+										src="https://www.youtube.com/embed/zNVLRAyjYII"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>'
+						></button>
+					</div>
+					<img
+						class="absolute md:relative w-full h-full object-cover object-center"
+						src="images/content/image-hero.jpg"
+						alt="House with sofa and some plants"
+					/>
+				</div>
+			</div>
+			<!-- END : Section Hero | Right Side -->
+		</section>
+		<!-- END : Section Hero -->
+
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+			window.ga = function () {
+				ga.q.push(arguments)
+			}
+			ga.q = []
+			ga.l = +new Date()
+			ga('create', 'UA-XXXXX-Y', 'auto')
+			ga('set', 'anonymizeIp', true)
+			ga('set', 'transport', 'beacon')
+			ga('send', 'pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async></script>
+	</body>
 </html>

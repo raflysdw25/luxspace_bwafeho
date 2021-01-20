@@ -2,9 +2,9 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ["./**/*.html", "./**/*.js"],
-  },
+  }, //key purge, digunakan untuk mencari seluruh utility class dari package tailwind yang digunakan di file html atau js (dapat dicustom, tapi karena file postcss di import melalui js, jadi langsung dicari di js nya)
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -25,10 +25,10 @@ module.exports = {
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
-      blue: colors.blue,
+      blue: {...colors.blue, 200: "#BCE7F0"},
       indigo: colors.indigo,
       purple: colors.violet,
-      pink: colors.pink,
+      pink: {...colors.pink, 400: "#F9CADA"},
     },
     spacing: {
       px: "1px",
@@ -174,38 +174,13 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "ui-sans-serif",
-        "system-ui",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        '"Segoe UI"',
-        "Roboto",
-        '"Helvetica Neue"',
-        "Arial",
-        '"Noto Sans"',
-        "sans-serif",
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
+        "'Open Sans', sans-serif"
       ],
       serif: [
-        "ui-serif",
-        "Georgia",
-        "Cambria",
-        '"Times New Roman"',
-        "Times",
-        "serif",
+       
       ],
       mono: [
-        "ui-monospace",
-        "SFMono-Regular",
-        "Menlo",
-        "Monaco",
-        "Consolas",
-        '"Liberation Mono"',
-        '"Courier New"',
-        "monospace",
+        
       ],
     },
     fontSize: {
