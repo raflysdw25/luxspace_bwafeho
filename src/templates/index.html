@@ -44,7 +44,8 @@
 					<!-- START: Menu humberger wrapper -->
 					<div class="w-auto">
 						<ul
-							class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex"
+							id="menu"
+							class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100"
 						>
 							<li class="mx-3 py-6 md:py-0">
 								<a href="#" class="text-black hover:text-white hover:underline"
@@ -76,7 +77,7 @@
 							<li class="ml-6 md:hidden">
 								<button
 									id="menu-toggler"
-									class="relative flex z-50 items-center justify-center w-8 h-8 text-black hover:text-white focus:outline-none"
+									class="relative flex z-50 items-center justify-center w-8 h-8 text-black focus:outline-none"
 								>
 									<svg
 										class="fill-current"
@@ -161,7 +162,7 @@
 				</h2>
 				<div>
 					<a
-						href="#browser-the-room"
+						href="#browse-the-room"
 						class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 px-8 py-3 mt-4 rounded-full inline-block flex-none transition duration-200"
 					>
 						Explore Now
@@ -172,7 +173,7 @@
 			<!-- START : Section Hero | Right Side -->
 			<div class="w-full inset-0 md:relative md:w-1/2">
 				<div class="relative hero-image">
-					<div class="overlay insert-0 bg-black opacity-30 z-10"></div>
+					<div class="overlay insert-0 bg-black opacity-30 z-20"></div>
 					<div class="overlay right-0 bottom-0 md:inset-0">
 						<button
 							class="modal-trigger video hero-cta focus:outline-none z-30"
@@ -200,6 +201,117 @@
 			<!-- END : Section Hero | Right Side -->
 		</section>
 		<!-- END : Section Hero -->
+
+		<!-- START : Browse the Room -->
+		<section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+			<div class="container mx-auto">
+				<div class="flex flex-start mb-4">
+					<h3 class="text-2xl capitalize font-semibold">
+						browse the room <br class="" />
+						that we designed for you
+					</h3>
+				</div>
+				<div class="grid grid-rows-2 grid-cols-9 gap-4">
+					<!-- START : Card Item-1 -->
+					<div
+						class="relative col-span-9 row-span-1 md:col-span-4 card"
+						style="height: 180px"
+					>
+						<div class="card-shadow rounded-xl">
+							<img
+								src="../images/content/image-catalog-1.jpg"
+								alt=""
+								class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+							/>
+						</div>
+						<div
+							class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+						>
+							<h5 class="text-lg font-semibold">Living Room</h5>
+							<span class="">18.309 items</span>
+						</div>
+						<!-- stretched-link akan mengcover seluruh card sbagai link -->
+						<a href="detail.html" class="stretched-link">
+							<!-- Fake children -->
+						</a>
+					</div>
+					<!-- END : Card Item-1 -->
+					<!-- START : Card Item-2 -->
+					<div
+						class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
+					>
+						<div class="card-shadow rounded-xl">
+							<img
+								src="../images/content/image-catalog-3.jpg"
+								alt=""
+								class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+							/>
+						</div>
+						<div
+							class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-8"
+						>
+							<h5 class="text-lg font-semibold">Decoration</h5>
+							<span class="">77.392 items</span>
+						</div>
+						<!-- stretched-link akan mengcover seluruh card sbagai link -->
+						<a href="detail.html" class="stretched-link">
+							<!-- Fake children -->
+						</a>
+					</div>
+					<!-- END : Card Item-2 -->
+					<!-- START : Card Item-3 -->
+					<div
+						class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
+					>
+						<div class="card-shadow rounded-xl">
+							<img
+								src="../images/content/image-catalog-4.jpg"
+								alt=""
+								class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+							/>
+						</div>
+						<div
+							class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-8"
+						>
+							<h5 class="text-lg font-semibold">Bed Room</h5>
+							<span class="">22.094 items</span>
+						</div>
+						<!-- stretched-link akan mengcover seluruh card sbagai link -->
+						<a href="detail.html" class="stretched-link">
+							<!-- Fake children -->
+						</a>
+					</div>
+					<!-- END : Card Item-3 -->
+					<!-- START : Card Item-4 -->
+					<div
+						class="relative col-span-9 row-span-1 md:col-span-4 card"
+						style="height: 180px"
+					>
+						<div class="card-shadow rounded-xl">
+							<img
+								src="../images/content/image-catalog-2.jpg"
+								alt=""
+								class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
+							/>
+						</div>
+						<div
+							class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+						>
+							<h5 class="text-lg font-semibold">Children Room</h5>
+							<span class="">837 items</span>
+						</div>
+						<!-- stretched-link akan mengcover seluruh card sbagai link -->
+						<a href="detail.html" class="stretched-link">
+							<!-- Fake children -->
+						</a>
+					</div>
+					<!-- END : Card Item-4 -->
+				</div>
+			</div>
+		</section>
+		<!-- END : Browse the Room -->
+
+		<div class="min-h-screen"></div>
 
 		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 		<script>
