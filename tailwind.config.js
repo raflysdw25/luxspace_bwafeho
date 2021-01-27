@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ["./**/*.html", "./**/*.js"],
   }, //key purge, digunakan untuk mencari seluruh utility class dari package tailwind yang digunakan di file html atau js (dapat dicustom, tapi karena file postcss di import melalui js, jadi langsung dicari di js nya)
   presets: [],
